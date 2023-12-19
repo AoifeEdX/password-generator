@@ -5,28 +5,51 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Password Generator</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-		<div class="wrapper">
-			<div class="card">
-				<div class="card-header">
-					<h2>Click the button below to generate a password.</h2>
-					<p>A series of prompts will appear asking for your desired criteria.</p>
-				</div>
-				<div class="card-body">
-					<textarea readonly id="password" placeholder="Your Secure Password"
-						aria-label="Generated Password"></textarea>
-				</div>
-				<div class="card-footer">
-					<button id="generate" class="btn">Generate Password</button>
-				</div>
+	<header>
+		<nav class="navbar navbar-light bg-light">
+			<div class="container-fluid">
+				<span class="navbar-brand m-2 fs-2 h1">Password Generator</span>
+			</div>
+		</nav>
+	</header>
+
+
+	<div class="wrapper">
+		<div class="card">
+			<div class="card-header text-center">
+				<h2>Click the button below to generate a password.</h2>
+				<p>A series of prompts will appear asking for your desired criteria.</p>
+			</div>
+			<div class="card-body">
+				<textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+			</div>
+			<div class="card-footer">
+				<button id="generate" class="btn">Generate Password</button>
 			</div>
 		</div>
+	</div>
 
-		<script src="script.js"></script>
+	<footer class="bg-dark text-center text-white footer">
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+			© AoifeEdX 2023
+		</div>
+	</footer>
+	
+
+	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
