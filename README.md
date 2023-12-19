@@ -18,7 +18,7 @@ This project uses JavaScript to create a password generator based on browser pro
 ![screenshot](password-generator.png)
 
 
-### Linkss
+### Links
 
 * [Deployed website](https://aoifeedx.github.io/password-generator/)
 * [GitHub repository](https://github.com/AoifeEdX/password-generator)
