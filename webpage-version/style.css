@@ -1,0 +1,119 @@
+body {
+	background-color: #000;
+	color: #00ff00; /* Cyberpunk green color */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	font-family: 'Orbitron', sans-serif; /* Orbitron font */
+}
+
+.card {
+  background-color: #222;
+  width: 80%; 
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Ambient shadow */
+}
+
+.card-header,
+.card-footer {
+	background-color: #444;
+}
+
+.btn-dark {
+	background-color: #a74d08; /* Cyberpunk green color */
+	border-color: #000000;
+}
+
+.btn-dark:hover {
+	background-color: #005500; /* Darker green on hover */
+	border-color: #005500;
+}
+
+.card-body {
+	color: #00ff00; /* Cyberpunk green color */
+}
+
+.form-check-input {
+	background-color: #404040; 
+	border-color: #404040; 
+}
+
+.form-check-input:checked {
+	background-color: #00ff00; 
+	border-color: #00ff00;
+}
+
+.form-check-input:checked::before {
+	background-color: #ffffff; 
+}
+
+.form-check-input::before {
+	background-color: #ffffff; 
+}
+
+.password-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.password-textarea {
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;	
+	width: 100%; 
+}
+
+textarea {
+  background-color: #575757; /* Match the card background color */
+  color: #00ff00; /* Cyberpunk green color */
+  font-family: 'Orbitron', sans-serif; /* Orbitron font */
+  border-radius: 5px;
+  outline: none;
+	width: 100%; 
+  padding: 10px;
+  position: relative; 
+}
+
+.password-textarea::after {
+  content: '|';
+  display: inline-block;
+  animation: blink-caret 0.75s infinite;
+  position: absolute;
+  top: 10px; /* Adjusted top position */
+  left: 10px; /* Adjusted left position */
+}
+
+@keyframes blink-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.matrix-container {
+  font-family: 'Orbitron', sans-serif; /* Orbitron font or any other font you prefer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  color: #00ff00; /* Cyberpunk green color */
+}
+
+.matrix-text {
+  display: inline-block;
+  font-size: 16px; /* Adjust font size as needed */
+  margin: 0;
+  white-space: nowrap;
+  animation: matrix-rain 5s linear infinite;
+}
